@@ -1,0 +1,254 @@
+<!doctype html>
+<head>
+	<meta charset = "utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
+	<link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+	<style>
+		html { font-family: 'Rozha One', serif; font-weight: 200;}
+		body{ background:black; }
+		header {padding-top: 5px; width:800px; height:50px; position: fixed;left:calc(50% - 480px);z-index: 9999;}
+		header #logo {float:left;  width:100px;height:44px;line-height: 44px;text-align: center;color:white;font-size: 1.4em;font-weight:400;padding-top: 10px;}
+		header #menu {float:right; width:600px;}
+		header #menu li{float:left; width:100px; height: 44px; line-height:40px;text-align: center;color:white;font-size: 1.2em;font-weight:400; list-style: none;}
+		header #menu li:hover{background:white }
+		section,footer{width:960px; height:600px; margin:0 auto;position: relative}
+		section h2{color:black; font-size: 3em; font-weight:100; position: absolute;line-height: 1.2}
+		section p{color:black; font-size: 1em; font-weight:100; position: absolute;line-height: 1.5;width:550px;}
+		footer h2{color:white; font-size: 3em; line-height: 600px;}
+		svg {}
+		
+		section svg{}
+		#s1{background:hotpink}
+		#s1 h2{left:400px; top:200px;}
+		
+		#s2{background:purple; position: relative;}
+		#s2 h2{left:200px; top:200px;}
+		#s2 p{left:200px; top:280px;}
+		#s2 #cloud1{position: absolute;left:150px;top:100px;}
+		#s2 #cloud2{position: absolute;left:450px;top:70px;}
+		#s2 #cloud3{position: absolute;left:750px;top:100px;}
+		
+		#s3{background:white;}
+		#s3 h2{left:100px; top:300px; color:black;font-size: 2em;margin-left: 300px; position:absolute; padding-bottom: 200px;}
+		#s3 p{left:100px; top:380px;font-size: 2em;margin-left: 300px; position:absolute; padding-bottom: 500px;}
+		
+		#s4{background:#B40431;;background-size: 100% auto;position: relative;}
+		#s4 h2{left:400px; top:200px;}  
+		#s4 #note{position: absolute;left:750px;top:100px;}
+		#s4 #note2{position: absolute;left:550px;top:100px;}
+		
+		#s5{background:#086A87;}
+		#s5 h2{left:50px; top:300px;}
+		#s5 p{left:50px; top:380px;}
+		
+		#s6{background:#DBA901;}
+		#s6 h2{left:350px; top:100px;}
+		#s6 p{left:350px; top:180px;}
+		footer{background:black;}
+		footer{text-align: center; font-size:0.35em;}
+		#line{width:960px; position:absolute; left:calc(50% - 480px);z-index: 9999}
+		#line img{position: absolute; top:170px; left:30px; }
+		
+		.balloon{
+			width:50px; height:350px; /*풍선이 다 나오도록 높이값 변경*/
+			background:url('./img/img-11.png');
+			background-size:100% auto;
+			background-repeat:no-repeat;
+			animation: bMove 8s linear;
+			/*애니메이션이름 bMove 8초동안 가속도없이 일정한 속도로*/
+		}
+
+		@keyframes bMove{
+			0%{ background-position: 0px 300px; opacity:0;}
+			20%{opacity:1;}
+			80%{ opacity:1; }
+			100%{ background-position:0 0;opacity:0;}
+			/*백그라운드의 위치가 처음에는 300px만큼 밑에 생겼다가 위로 올라오도록*/
+		}
+
+		.cloud{
+			width:350px; height:50px; /*풍선이 다 나오도록 높이값 변경*/
+			background:url('./img/img-12.png');
+            
+			background-size:auto 100%;
+			background-repeat:no-repeat;
+			animation: cMove 15s linear;
+			/*애니메이션이름 bMove 8초동안 가속도없이 일정한 속도로*/
+		}
+
+		@keyframes cMove{
+			0%{ background-position:  250px 0px; opacity:0;}
+			20%{opacity:1;}
+			80%{ opacity:1; }
+			100%{ background-position:0 0;opacity:0;}
+			/*백그라운드의 위치가 처음에는 300px만큼 밑에 생겼다가 위로 올라오도록*/
+		}
+		
+
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			room
+		</div>
+		<ul id="menu">
+			<li id="m1">?</li>
+			<li id="m2">?</li>
+			<li id="m3">?</li>
+			<li id="m4">?</li>
+			<li id="m5">?</li>
+			<li id="m6">?</li>
+		</ul>
+	</header>
+	<section id="s1">
+		<h2> </h2>
+		
+		<img src="./img/img-05.png" style="padding-top: 160px; margin-left: 380px; ">
+		
+
+	</section>
+	<section id="s2">
+	<div id="k1"></div>
+		<h2> </h2>
+		<p> </p>
+      <img src="./img/img-08.png" style="padding-top: 160px; width: 200px;margin-left: 375px;">
+
+<svg id="cloud1" fill="skyblue" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19.36 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.64-4.96z"/>
+</svg>
+<svg id="cloud2" fill="skyblue" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19.36 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.64-4.96z"/>
+</svg>
+<svg id="cloud3" fill="skyblue" height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19.36 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.64-4.96z"/>
+</svg>
+		
+	</section>
+	<section id="s3">
+		<h2></h2>
+		<p>nock nock</p>
+		<img src="./img/img-07.jpg" style="width: 120px;margin-left: 400px; padding-top: 200px;">
+
+	</section>
+	<section id="s4">
+		<h2> <br> </h2>
+		<img src="./img/img-06.jpg" style="width: 150px; margin-left: 400px;padding-top: 200px;">
+		 <svg id="note" fill="#000000" height="40" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M12 3v9.28c-.47-.17-.97-.28-1.5-.28C8.01 12 6 14.01 6 16.5S8.01 21 10.5 21c2.31 0 4.2-1.75 4.45-4H15V6h4V3h-7z"/>
+</svg>
+
+<svg id="note2" fill="#000000" height="40" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M12 3v9.28c-.47-.17-.97-.28-1.5-.28C8.01 12 6 14.01 6 16.5S8.01 21 10.5 21c2.31 0 4.2-1.75 4.45-4H15V6h4V3h-7z"/>
+</svg>
+	</section>
+	<section id="s5">
+		<h2></h2>
+		<p></p>
+		<img src="./img/img-10.png" style="width: 140px;margin-left: 400px; padding-top: 200px;">
+	</section>
+	<section id="s6">
+		<h2></h2>
+		<p></p>
+		<img src="./img/img-09.png" style="width: 140px;margin-left: 400px; padding-top: 200px;">
+	</section>
+	<footer>
+	
+<svg fill="white" height=50" viewBox="0 0 24 24" width="70" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+</svg>
+ <h2>
+		copyright&copy;2017.asy
+	</h2>
+	
+
+	</footer>
+	
+	<script>
+		window.onload = function(){window.scrollTo(0,0);}
+		
+		m1.onclick = function(){ aniScroll(100); }
+		m2.onclick = function(){ aniScroll(600); }
+		m3.onclick = function(){ aniScroll(1200); }
+		m4.onclick = function(){ aniScroll(1800); }
+		m5.onclick = function(){ aniScroll(2400); }
+		m6.onclick = function(){ aniScroll(4000); }
+		function aniScroll(destination){
+			var distance = destination - document.body.scrollTop;
+			scrollByAnimated(distance, 250);
+		}
+       
+
+       setInterval(attachBalloon,1000);
+	//1. setInterval함수는 특정한 함수를 지정된 시간마다 실행한다. 따라서 attachballoon을 1000밀리세컨드(1초)마다 실행시킨다.
+
+	function attachBalloon(){
+		var t = document.createElement("div");
+		t.setAttribute("class","balloon"); 
+		t.style.position = "absolute"; 
+		t.style.top = randomBH(0,window.innerHeight) + "px";
+		t.style.left = randomBH(0,window.innerWidth) + "px";
+
+		//2. 풍선이 안지워지고 남아있어!!! 풍선을 지워주는 함수를 만들자.
+		t.addEventListener("animationend",remove);
+		//풍선이 끝나는 animationend이벤트를 이런식으로 달아준다(다른형식의 이벤트달기)
+		//애니메이션이 끝나면 remove를 실행해 이런 뜻이다.
+
+		s1.appendChild(t);		
+	}
+	
+	//3. 지워주기 함수(이건 그냥 복붙 )	
+	function remove(){
+		var t = event.target; //이벤트의 타겟을 t로 지정하고.
+		t.parentNode.removeChild(t); //그 엄마를 찾아서 자식중에 t를 지워라. 
+	}
+
+	//최소값과 최대값 사이의 임의의 숫자를 리턴하는 함수
+	function randomBH(min, max) {
+  		min = Math.ceil(min);
+  		max = Math.floor(max);
+  		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+   
+
+       setInterval(attachCloud,2000);
+	//1. setInterval함수는 특정한 함수를 지정된 시간마다 실행한다. 따라서 attachballoon을 1000밀리세컨드(1초)마다 실행시킨다.
+
+	function attachCloud(){
+		var t = document.createElement("div");
+		t.setAttribute("class","cloud"); 
+		t.style.position = "absolute"; 
+		t.style.top = randomBH(0,window.innerHeight) + "px";
+		t.style.left = randomBH(0,window.innerWidth) + "px";
+
+		//2. 풍선이 안지워지고 남아있어!!! 풍선을 지워주는 함수를 만들자.
+		t.addEventListener("animationend",remove);
+		//풍선이 끝나는 animationend이벤트를 이런식으로 달아준다(다른형식의 이벤트달기)
+		//애니메이션이 끝나면 remove를 실행해 이런 뜻이다.
+
+		s2.appendChild(t);		
+	}
+	
+	//3. 지워주기 함수(이건 그냥 복붙 )	
+	function remove(){
+		var t = event.target; //이벤트의 타겟을 t로 지정하고.
+		t.parentNode.removeChild(t); //그 엄마를 찾아서 자식중에 t를 지워라. 
+	}
+
+	//최소값과 최대값 사이의 임의의 숫자를 리턴하는 함수
+	function randomBH(min, max) {
+  		min = Math.ceil(min);
+  		max = Math.floor(max);
+  		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+
+
+	</script>
+</body>
